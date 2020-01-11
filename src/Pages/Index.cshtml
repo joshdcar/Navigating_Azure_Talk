@@ -1,0 +1,15 @@
+﻿
+@page
+@inject NavigatingAzure.IGeoConfiguration geoConfig;
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Navigating Azure </h1>
+    <p>Resource Location: @geoConfig.Location</p>
+    <p><a href="hybrid">View Hybrid Page</a></p>
+
+</div>
